@@ -16,7 +16,7 @@
 <div class="main" test="test">
 
 	<body>
-	<h1><u>IA LAKE_</u></h1>
+	<h1><u>IA LAKE</u></h1>
 
 		<p style="text-align:center">
 		Ce site contient tous mes projets qui touchent aux <strong>intelligences artificielles</strong>.
@@ -30,10 +30,11 @@
                 if (this.readyState == XMLHttpRequest.DONE) {
                     if(this.status == 200){
                         console.log("ouvert !!");
-                        document.getElementById('state').innerHTML = '<p>le site actif est actuelement ouvert !</p>';
+                        document.getElementById('state').innerHTML = '<p>le site actif est actuelement ouvert !</br><a href="http://89.82.115.147:2500/project/index.html">clique ici pour t\'y rendre !</a></p>';
+                        document.getElementById('article').innerHTML = '<p>plus d\'info sur mon <a href = "http://89.82.115.147:2500/project/project.php?proj=C4IA">site actif</a></p>'
                     }else{
                         console.log("fermé !!");
-                        document.getElementById('state').innerHTML = '<p>le site actif est actuelement fermé ...</p>';
+                        document.getElementById('state').innerHTML = '<p>le site actif est actuelement fermé ...</br>tu peux envoyer un message sur le serveur discord pour que je l\'ouvre</p>');
                     }
                 }
             };
@@ -41,14 +42,24 @@
             request.send();
         </script>
 		</br>
-		si vous avez des suggestions pour les projets actuels où pour des projets futurs vous pouvez allez m'en parler sur discord.
+		Si vous avez des suggestions pour les projets actuels où pour des projets futurs vous pouvez allez m'en parler sur discord.
 		</p>
 
+        <p>
+            Pour l'instant il y a un projet important sur le site :
+            </br>
+            le projet connect4 IA.
+            Comme son nom l'indique, ce projet a pour but de créer une inteligence artificielle capable de jouer au puissance 4.
+            <span id = article></span>
+            Ce projet nescessite une grande base de données pour entrainner l'IA.
+            J'ai donc créer une version de puissance 4 disponible ici :
+            
+        </p>
 		<h2> Liens externes :</h2>
 		<p>
 			Je publie aussi des choses sur les IA sur ma chaîne youtube et sur GitHub. 
 			J'ai aussi un serveur discord pour tous mes projets. 
-			<strong>Je vous conseille de le rejoindre</strong> car ce site n'est pas hébergé 24h/24 et vous pourrez savoir si le Site est ouvert ou non sur le serveur discord.
+			<strong>Je vous conseille de le rejoindre</strong> car le site actif n'est pas hébergé 24h/24 et vous pourrez savoir si le Site est ouvert ou non sur le serveur discord.
 			</br></br>
 		</p>
 		<div class="link">

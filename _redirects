@@ -1,2 +1,3 @@
 /home              /
 /active/*            http://89.82.115.147:2500/project/main.php/:splat 200!
+/bdd/*            http://89.82.115.147:2500/project/projects/C4IA/games/database/test.php/:splat 200!
