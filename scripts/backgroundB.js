@@ -24,8 +24,7 @@ let backgroundB = function(p) {
     let W,H;
     p.setup = function(){
         
-        back = p.loadImage('http://89.82.115.147:2500/project/images/bunker.png');
-        TV = p.loadImage('http://89.82.115.147:2500/project/images/TV.png');
+        back = p.loadImage('../images/bunker.png');
        for(i =0; i < ball_num; i ++){
             balls[i] = new ball(p.random(70)+30);
        }
