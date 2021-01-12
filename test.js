@@ -19,8 +19,7 @@ let background = function(p) {
   let W,H,BM
   let start = 0;
   p.setup = function(){
-    console.log("vacezhdqmjefkqeluqeqlkhufdlkuqzf")
-    cloud = p.loadImage('./images/cloud.png');
+    cloud = p.loadImage('images/cloud.png');
     background_image = p.loadImage('images/forest.png');
     lake_image = p.loadImage('images/foreground.png');
     mountain_image = p.loadImage('images/backgroundM.png');
@@ -63,7 +62,7 @@ let ticking = false;
 	
 	
   p.draw = function(){
-	  
+	  console.log("i'm working ! But nothing change so that mean i'm broken ")
 	  var y = window.scrollY;
 	  //console.log(document.body.clientHeight+" "+(window.scrollY/document.body.clientHeight)*0.1*H);
 	  canvas.style("top",(-(window.scrollY/document.body.clientHeight)*0.1*H)+"px");

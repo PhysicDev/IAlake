@@ -23,11 +23,6 @@
     src: url('../fonts/moon-get.ttf');
 }
 
-canvas{
-
-	transition: all .05s ease;
-}
-
 .youtube{
 	margin-left:50px;
 	width:200px;
@@ -67,21 +62,6 @@ img{
 	
 }
 
-#canvas {
-	
-	position: fixed;
-	top:0px;
-	left: 0px;
-	
-}
-
-.canvas {
-	pointer-events:none;
-	position: fixed;
-	top:0px; 
-	left: 0px;
-	
-}
 h1{
 	font-family: main_police,sans-serif;
 	margin-left:auto;
@@ -264,21 +244,23 @@ p{
 
 html{
 	
-	background-color:#000000;
+	background-color:#00000000;
 	/*cursor: none;*/ 
 	overflow-x: hidden;
 	padding:none;
 	padding-bottom:-10px;
 	height:100vh;
 	margin:-1%;
-	background: url("../images/forest.png");
+	z-index:-100;
+	
 }
 body{
+	z-index:-100;
 	padding:none;
 	overflow-x: hidden;
-	background-color:#000000;
-	background: url("../images/forest.png");
-    /*    overflow:hidden;*/
+	background-color:#00000000;
+    /*   
+	background: url("../images/forest.png"); overflow:hidden;*/
 }
 
 p.image{
