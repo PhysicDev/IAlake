@@ -131,6 +131,7 @@ function minimax(data,power,Epower,player,E){
     }
 }
 
+//url secret : 
 
 self.onmessage = function(e) {
     console.log('Calcul du coup : minimax de profondeur : '+e.data[1]+'\n grille d\'entrée : '+e.data[0])

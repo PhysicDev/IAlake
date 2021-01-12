@@ -31,10 +31,10 @@
                     if(this.status == 200){
                         console.log("ouvert !!");
                         document.getElementById('state').innerHTML = '<p>le site actif est actuelement ouvert !</br><a href="http://89.82.115.147:2500/project/index.html">clique ici pour t\'y rendre !</a></p>';
-                        document.getElementById('article').innerHTML = '<p>plus d\'info sur mon <a href = "http://89.82.115.147:2500/project/project.php?proj=C4IA">site actif</a></p>'
+                        document.getElementById('article').innerHTML = '<p>plus d\'info sur mon <a href = "http://89.82.115.147:2500/project/project.php?proj=C4IA">site actif</a></p>';
                     }else{
                         console.log("fermé !!");
-                        document.getElementById('state').innerHTML = '<p>le site actif est actuelement fermé ...</br>tu peux envoyer un message sur le serveur discord pour que je l\'ouvre</p>');
+                        document.getElementById('state').innerHTML = '<p>le site actif est actuelement fermé ...</br>tu peux envoyer un message sur le serveur discord pour que je l\'ouvre</p>';
                     }
                 }
             };
@@ -53,7 +53,13 @@
             <span id = article></span>
             Ce projet nescessite une grande base de données pour entrainner l'IA.
             J'ai donc créer une version de puissance 4 disponible ici :
-
+            
+            <div url="./projects/C4IA/games/game.php" class="button green shake" id="button-2">
+                <a href="./projects/C4IA/games/game.php">jouer</a>
+            </div>
+            les parties que vous jouerez seront enregistrées (uniquement lorsque ma base de données est ouverte).
+            et je pourais commencer a créer l'IA dès que j'en aurais assez !!
+            Je vous montrerais ce que ça donne une fois que l'IA sera terminée et entrainée.
         </p>
 		<h2> Liens externes :</h2>
 		<p>
