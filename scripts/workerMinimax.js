@@ -1,3 +1,5 @@
+//code de l'algo minimax (pas ultra optimisé mais il fait le taf)
+
 function detectAlign(data,x,y,t){
     let streak = 0;
     for(let i = x-3; i <= x+3; i++){
@@ -77,7 +79,6 @@ function minimax(data,power,Epower,player,E){
     let prevision = Array(7);
     let stat = [0,0,0,0,0,0,0];
     let multiple = E*player*-1;
-    //console.log(multiple,player);
     for(let i = 0; i < 7; i ++){
         let y = getLowerEmpty(data,i);
         stat[i] = 0;
@@ -93,7 +94,6 @@ function minimax(data,power,Epower,player,E){
             prevision[i][y] = player;
             //console.log(player);
             if(detectAlign(prevision,i,y,player)){
-               // console.log("AAAAAAAAAAAAAAAAAAAAAAAAA");
                 stat[i] = 100*multiple;
                 break;
             }else{
