@@ -37,8 +37,8 @@ $(document).ready(function(){
 
 var AIlevel = 0;
 var playGrid;
-var minimaxCalculator = new Worker("./workerMinimax.js");
-var mail = new Worker("./data_send.js");
+var minimaxCalculator = new Worker("scripts/workerMinimax.js");
+var mail = new Worker("scripts/data_send.js");
 var extractor = new Object();
 var game_send = 0;
 var ip ="";
