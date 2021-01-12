@@ -51,20 +51,10 @@ mail.onmessage = function(e) {
 }
 
 function get_ip(){
-
-    var request = new XMLHttpRequest();
-    request.onreadystatechange = function() {
-        if (this.readyState == XMLHttpRequest.DONE && this.status == 200) {
-            ip = this.responseText;
-            reset_extractor();
-            return(this.responseText);
-        }
-    };
-    request.open("POST", "./ip.php");
-    request.send();
+    //flemme de reprogrammer la requete d'ip pour la version statique
+    ip = "netlify";
 }
 
-console.log(get_ip());
 console.log(ip);
 function reset_extractor(){
     extractor = new Object();
