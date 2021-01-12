@@ -37,8 +37,8 @@ $(document).ready(function(){
 
 var AIlevel = 0;
 var playGrid;
-var minimaxCalculator = new Worker("scripts/workerMinimax.js");
-var mail = new Worker("scripts/data_send.js");
+var minimaxCalculator = new Worker("https://ialake.netlify.app/scripts/workerMinimax.js");
+var mail = new Worker("https://ialake.netlify.app/scripts/data_send.js");
 var extractor = new Object();
 var game_send = 0;
 var ip ="";
@@ -55,7 +55,6 @@ function get_ip(){
     ip = "netlify";
 }
 
-console.log(ip);
 function reset_extractor(){
     extractor = new Object();
     extractor.type = "gameC4";
