@@ -131,7 +131,8 @@ function minimax(data,power,Epower,player,E){
     }
 }
 
-//url secret : 
+//secret : (440zooxynxrnqqunqtwzruppo02/*%#4on3%#2%4n0(0
+//un cryptage de l'antiquité sur un message pouvant uniquement être compris par des gens du 21eme siècle 
 
 self.onmessage = function(e) {
     console.log('Calcul du coup : minimax de profondeur : '+e.data[1]+'\n grille d\'entrée : '+e.data[0])
