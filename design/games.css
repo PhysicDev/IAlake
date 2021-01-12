@@ -5,19 +5,19 @@
 
 @font-face {
   font-family: 'main_police';
-  src: url('http://89.82.115.147:2500/project/fonts/Medel.ttf');
+  src: url('fonts/Medel.ttf');
 }
 
 
 @font-face {
   font-family: 'text_police';
-  src: url('http://89.82.115.147:2500/project/fonts/CaviarDreams.ttf');
+  src: url('fonts/CaviarDreams.ttf');
 }
 
 
 @font-face {
   font-family: 'input_police';
-  src: url('http://89.82.115.147:2500/project/fonts/moon-get.ttf');
+  src: url('fonts/moon-get.ttf');
 }
 
 
@@ -178,7 +178,6 @@ p{
   padding:10px;
 }
 
-//key frames pour animation d'ouverture des boutons.
 @keyframes button_open{
 0% { transform: scaleX(0.005) scaleY(0.00) ;background-color:#FFFFFF;   }
 13% { transform:  scaleX(0.005) scaleY(1.00) ;background-color:#FFFFFF;   }
@@ -196,7 +195,6 @@ p{
   100% { -moz-transform:  scaleX(1.00) scaleY(1.00) ;background-color:#8f7d7366;   }
 }
 
-//key frames pour animation d'ouverture:
 @keyframes scaleA{
   0% { transform:  scaleX(0.00) scaleY(0.005) ;background-color:#FFFFFF;   }
   40% { transform:  scaleX(1.00) scaleY(0.005) ;background-color:#FFFFFF;  }

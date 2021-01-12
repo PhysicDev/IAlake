@@ -1,4 +1,4 @@
-//voir palette dans mon dossier txt
+
 
 
 /*
@@ -12,7 +12,7 @@ code de bouton animé (incroyable)
 
 @font-face {
   font-family: 'input_police';
-  src: url('http://89.82.115.147:2500/project/fonts/moon-get.ttf');
+  src: url('fonts/moon-get.ttf');
 }
 
 .button{
@@ -234,7 +234,6 @@ code de bouton animé (incroyable)
 	text-decoration: none;
 }
 
-//key frame shake
   @keyframes animationFrames{
     0% {
       transform:  rotate(0deg) ;
@@ -320,7 +319,6 @@ code de bouton animé (incroyable)
     }
   }
 
-  //keyframe slide
  
   
   @keyframes slide{
