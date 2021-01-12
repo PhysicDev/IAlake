@@ -5,19 +5,19 @@
 
 @font-face {
   font-family: 'main_police';
-  src: url('fonts/Medel.ttf');
+  src: url('../fonts/Medel.ttf');
 }
 
 
 @font-face {
   font-family: 'text_police';
-  src: url('fonts/CaviarDreams.ttf');
+  src: url('../fonts/CaviarDreams.ttf');
 }
 
 
 @font-face {
   font-family: 'input_police';
-  src: url('fonts/moon-get.ttf');
+  src: url('../fonts/moon-get.ttf');
 }
 
 

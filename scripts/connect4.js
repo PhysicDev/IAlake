@@ -432,7 +432,7 @@ let C4 = function(p) {
         playGrid.reset();
         reset_extractor();
         p.noSmooth();
-        p.textFont(p.loadFont('http://89.82.115.147:2500/project/fonts/Medel.ttf'));
+        p.textFont(p.loadFont('fonts/Medel.ttf'));
     }
 
 
