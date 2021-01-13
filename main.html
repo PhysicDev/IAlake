@@ -29,11 +29,9 @@
             request.onreadystatechange = function() {
                 if (this.readyState == XMLHttpRequest.DONE) {
                     if(this.status == 200){
-                        console.log("ouvert !!");
                         document.getElementById('state').innerHTML = '<p>le site actif est actuelement ouvert !</br><a href="http://89.82.115.147:2500/project/index.html">clique ici pour t\'y rendre !</a></p>';
                         document.getElementById('article').innerHTML = '<p>plus d\'info sur mon <a href = "http://89.82.115.147:2500/project/project.php?proj=C4IA">site actif</a></p>';
                     }else{
-                        console.log("fermé !!");
                         document.getElementById('state').innerHTML = '<p>le site actif est actuelement fermé ...</br>tu peux envoyer un message sur le serveur discord pour que je l\'ouvre</p>';
                     }
                 }
