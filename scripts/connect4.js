@@ -62,7 +62,11 @@ function reset_extractor(){
     extractor.streak = game_send;
     extractor.player = ["humain",playGrid.player]
     extractor.game = new Array();
-    extractor.game.push(playGrid.data);
+    let test = Array.from(playGrid.data);
+    for(let i = 0; i < playGrid.data.length; i++){
+        test[i] = Array.from(playGrid.data[i])
+    }
+    extractor.game.push(test);
 }
 
 
@@ -148,7 +152,11 @@ class grid{
                             this.data[C[0]][col] = 1;
                             this.fall[C[0]][col] = p.millis();
                             console.log(this.data);
-                            extractor.game.push(Array.from(playGrid.data));
+                            let test = Array.from(playGrid.data);
+                            for(let i = 0; i < playGrid.data.length; i++){
+                                test[i] = Array.from(playGrid.data[i])
+                            }
+                            extractor.game.push(test);
                             this.checkAlign(C[0],col,1);
                         }else{
                             //le joueur 2 peut jouer uniquement si l'adversaire est un humain
@@ -156,7 +164,14 @@ class grid{
                                 this.data[C[0]][col] = -1;
                                 this.fall[C[0]][col] = p.millis();
                                 console.log(this.data);
-                                extractor.game.push(Array.from(this.data));
+                            let test = Array.from(playGrid.data);
+                            for(let i = 0; i < playGrid.data.length; i++){
+                                test[i] = Array.from(playGrid.data[i])
+                            }
+                            extractor.game.push(test);
+                            for(let i = 0; i < playGrid.data.length; i++){
+                                test[i] = Array.from(playGrid.data[i])
+                            }
                                 this.checkAlign(C[0],col,-1);
                             }else{
                                 break out;
@@ -238,19 +253,26 @@ class grid{
             if(this.turn){
                 this.data[col][pos] = 1;
                 this.fall[col][pos] = this.pref.millis();
-                extractor.game.push(Array.from(playGrid.data));
+                let test = Array.from(playGrid.data);
+                for(let i = 0; i < playGrid.data.length; i++){
+                    test[i] = Array.from(playGrid.data[i])
+                }
+                extractor.game.push(test);
                 this.checkAlign(col,pos,1);
             }else{
                 this.data[col][pos] = -1;
                 this.fall[col][pos] = this.pref.millis();
-                extractor.game.push(Array.from(playGrid.data));
+                let test = Array.from(playGrid.data);
+                for(let i = 0; i < playGrid.data.length; i++){
+                    test[i] = Array.from(playGrid.data[i])
+                }
+                extractor.game.push(test);
                 this.checkAlign(col,pos,-1);
             }
             this.turn = !this.turn;
         }
         this.isplaying = false;
     }
-    
     
     checkAlign(x,y,t){
         let streak = 0;
